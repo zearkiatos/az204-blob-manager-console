@@ -10,14 +10,14 @@ $ dotnet --version
 
 ### Create global.json to pin SDK version (like .nvmrc for Node.js)
 ```sh
-$ dotnet new globaljson --sdk-version 8.0.0
+$ dotnet new globaljson --sdk-version 8.0.411
 ```
 
 ### The global.json file content:
 ```json
 {
   "sdk": {
-    "version": "8.0.0",
+    "version": "8.0.411",
     "rollForward": "latestPatch"
   }
 }
