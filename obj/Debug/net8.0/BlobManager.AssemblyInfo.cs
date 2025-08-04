@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlobManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78fa1be7348baad6f48b1e287f8d8e759d6b2618")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcff20a872cab3a5c6313a680c0d5df5d31a6a12")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlobManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlobManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

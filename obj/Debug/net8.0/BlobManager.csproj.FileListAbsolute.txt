@@ -21,3 +21,8 @@
 /Users/pedrocapriles/Documents/courses/udemy/az-204/azure-blob-storage/az204-blob-manager-console/obj/Debug/net8.0/BlobManager.pdb
 /Users/pedrocapriles/Documents/courses/udemy/az-204/azure-blob-storage/az204-blob-manager-console/obj/Debug/net8.0/BlobManager.genruntimeconfig.cache
 /Users/pedrocapriles/Documents/courses/udemy/az-204/azure-blob-storage/az204-blob-manager-console/obj/Debug/net8.0/ref/BlobManager.dll
+/Users/pedrocapriles/Documents/courses/udemy/az-204/azure-blob-storage/az204-blob-manager-console/bin/Debug/net8.0/DotNetEnv.dll
+/Users/pedrocapriles/Documents/courses/udemy/az-204/azure-blob-storage/az204-blob-manager-console/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll
+/Users/pedrocapriles/Documents/courses/udemy/az-204/azure-blob-storage/az204-blob-manager-console/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/pedrocapriles/Documents/courses/udemy/az-204/azure-blob-storage/az204-blob-manager-console/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+/Users/pedrocapriles/Documents/courses/udemy/az-204/azure-blob-storage/az204-blob-manager-console/bin/Debug/net8.0/Sprache.dll

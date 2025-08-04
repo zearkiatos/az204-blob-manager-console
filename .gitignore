@@ -1,2 +1,15 @@
 .DS_Store
 bin
+obj
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates

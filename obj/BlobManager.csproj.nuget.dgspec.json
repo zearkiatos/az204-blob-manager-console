@@ -47,6 +47,10 @@
             "Azure.Storage.Blobs": {
               "target": "Package",
               "version": "[12.18.0, )"
+            },
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             }
           },
           "imports": [
