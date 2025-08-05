@@ -28,6 +28,15 @@ public class Program
 
         await Console.Out.WriteLineAsync($"Account SKU: {info?.SkuName}");
 
+        await EnumerateContainersAsync(serviceClient);
     }
+
+    private static async Task EnumerateContainersAsync(BlobServiceClient client) {
+        await foreach (BlobContainerItem container in client.GetBlobContainersAsync())
+        {
+            await Console.Out.WriteLineAsync($"Container: {container.Name}");
+        }
+    }
+    
 
 }
