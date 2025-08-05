@@ -33,6 +33,10 @@ public class Program
         string existingContainerName = "raster-graphics";
 
         await EnumerateBlobsAsync(serviceClient, existingContainerName);
+
+        string newContainerName = "vectors-graphics";
+
+        BlobContainerClient containerClient = await GetContainerAsync(serviceClient, newContainerName);
     }
 
     private static async Task EnumerateContainersAsync(BlobServiceClient client)
@@ -52,6 +56,17 @@ public class Program
             await Console.Out.WriteLineAsync($"Blob: {blob.Name}");
         }
     }
-    
+
+    private static async Task<BlobContainerClient> GetContainerAsync(BlobServiceClient client, string containerName)
+    {
+        BlobContainerClient container = client.GetBlobContainerClient(containerName);
+
+        await container.CreateIfNotExistsAsync(PublicAccessType.Blob);
+
+        await Console.Out.WriteLineAsync($"New container called: {containerName}");
+
+        return container;
+    }
+
 
 }
