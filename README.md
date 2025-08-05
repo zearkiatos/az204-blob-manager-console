@@ -6,7 +6,7 @@ This is a C# 🟪 console application to manager blob media 🏞️ 🎵content 
 [![NetCore & Net Framework](https://img.shields.io/badge/netcore%20&%20NET%20Framework-4f3ac9?style=for-the-badge&logo=dotnet&logoColor=white&labelColor=000000)]()
 [![Azure](https://img.shields.io/badge/Azure-2b83cb?style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA4MDAgODAwIj4KICA8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMjkuNS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogMi4xLjAgQnVpbGQgMTQxKSAgLS0+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5zdDAgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0zNzAuMSw2NzUuNmMxMDIuOC0xOC4yLDE4Ny43LTMzLjIsMTg4LjYtMzMuNGwxLjgtLjQtOTctMTE1LjRjLTUzLjQtNjMuNS05Ny0xMTUuNy05Ny0xMTYsMC0uNiwxMDAuMi0yNzYuNSwxMDAuOC0yNzcuNS4yLS4zLDY4LjQsMTE3LjQsMTY1LjMsMjg1LjQsOTAuNywxNTcuMywxNjUuNSwyODYuOSwxNjYuMiwyODguMWwxLjMsMi4yaC0zMDguNHMtMzA4LjQsMC0zMDguNCwwbDE4Ni45LTMzaDBaTTAsNjQwLjRjMC0uMiw0NS43LTc5LjUsMTAxLjYtMTc2LjRsMTAxLjYtMTc2LjEsMTE4LjQtOTkuNGM2NS4xLTU0LjcsMTE4LjYtOTkuNCwxMTguOC05OS41LjIsMC0uNiwyLjEtMS45LDQuOC0xLjMsMi43LTU5LjEsMTI2LjgtMTI4LjYsMjc1LjhsLTEyNi4zLDI3MC44aC05MS44QzQxLjMsNjQwLjcsMCw2NDAuNiwwLDY0MC40SDBaIi8+Cjwvc3ZnPg==&logoColor=white&labelColor=000000)]()
 
-# How to run the project
+# How to build the project
 
 ## For Linux 🐧 or Mac 🍎
 
@@ -23,6 +23,90 @@ $ . ./run.sh; build
 ## Direct command with donten cli
 
 ```sh
-$ dotnet build
+$ dotnet build az204-blob-manager-console.sln
+```
+
+# How to run the project
+
+## For Linux 🐧 or Mac 🍎
+
+```sh
+$ make run
+```
+
+## For Windows 🪟
+
+```sh
+$ . ./run.sh; run
+```
+
+## Direct command with donten cli
+
+```sh
+$ dotnet run
+```
+
+## Running with docker 🐳
+
+## For Linux 🐧 or Mac 🍎
+
+```sh
+$ make docker-up
+
+// and
+
+$ make docker-down
+```
+
+## For Windows 🪟
+
+```sh
+$ . ./run.sh; docker-up
+
+// and
+
+$ . ./run.sh; docker-down
+```
+
+## Direct with docker 🐳
+
+```sh
+$ docker compose up --build
+
+// and
+
+$ docker compose down
+```
+
+## Running with podman 🦭
+
+## For Linux 🐧 or Mac 🍎
+
+```sh
+$ make podman-up
+
+// and
+
+$ make podman-down
+```
+
+## For Windows 🪟
+
+```sh
+$ . ./run.sh; podman-up
+
+// and
+
+$ . ./run.sh; docker-down
+```
+
+## Direct with docker 🦭
+
+```sh
+$ podman up --build
+
+// and
+
+$ podman compose down
 ```
 
