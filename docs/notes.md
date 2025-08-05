@@ -50,7 +50,7 @@ $ cp .env.example .env
 ```
 
 2. Edit `.env` file and add your actual Azure Storage credentials:
-```
+```txt
 BLOB_SERVICE_ENDPOINT=https://yourstorageaccount.blob.core.windows.net/
 STORAGE_ACCOUNT_NAME=yourstorageaccount
 STORAGE_ACCOUNT_KEY=your_actual_storage_account_key
@@ -73,4 +73,10 @@ var blobServiceClient = new BlobServiceClient(config.ConnectionString);
 
 ```sh
 $ dotnet build
+```
+
+## How to run the console application
+
+```sh
+$ dotnet run
 ```

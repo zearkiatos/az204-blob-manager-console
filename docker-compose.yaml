@@ -1,0 +1,10 @@
+services:
+  console:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    container_name: "az204-blob-manager-console"
+    volumes:
+      - .:/app
+    tty: true
