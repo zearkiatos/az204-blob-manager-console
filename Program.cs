@@ -37,6 +37,11 @@ public class Program
         string newContainerName = "vectors-graphics";
 
         BlobContainerClient containerClient = await GetContainerAsync(serviceClient, newContainerName);
+
+        string uploadedBlobName = "graph.svg";
+        BlobClient blobClient = await GetBlobAsync(containerClient, uploadedBlobName);
+
+        await Console.Out.WriteLineAsync($"Blob URL: {blobClient.Uri}");
     }
 
     private static async Task EnumerateContainersAsync(BlobServiceClient client)
@@ -66,6 +71,24 @@ public class Program
         await Console.Out.WriteLineAsync($"New container called: {containerName}");
 
         return container;
+    }
+
+    private static async Task<BlobClient> GetBlobAsync(BlobContainerClient client, string blobName)
+    {
+        BlobClient blob = client.GetBlobClient(blobName);
+
+        bool exists = await blob.ExistsAsync();
+
+        if (!exists)
+        {
+            await Console.Out.WriteLineAsync($"Blob {blob.Name} not found!");
+        }
+        else
+        {
+            await Console.Out.WriteLineAsync($"Blob found, URI: {blob.Uri}");
+        }
+
+        return blob;
     }
 
 
