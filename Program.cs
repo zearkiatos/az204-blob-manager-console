@@ -29,12 +29,27 @@ public class Program
         await Console.Out.WriteLineAsync($"Account SKU: {info?.SkuName}");
 
         await EnumerateContainersAsync(serviceClient);
+
+        string existingContainerName = "raster-graphics";
+
+        await EnumerateBlobsAsync(serviceClient, existingContainerName);
     }
 
-    private static async Task EnumerateContainersAsync(BlobServiceClient client) {
+    private static async Task EnumerateContainersAsync(BlobServiceClient client)
+    {
         await foreach (BlobContainerItem container in client.GetBlobContainersAsync())
         {
             await Console.Out.WriteLineAsync($"Container: {container.Name}");
+        }
+    }
+
+    private static async Task EnumerateBlobsAsync(BlobServiceClient client, string containerName)
+    {
+        BlobContainerClient container = client.GetBlobContainerClient(containerName);
+        await Console.Out.WriteLineAsync($"Searching in: {container.Name}");
+        await foreach (BlobItem blob in container.GetBlobsAsync())
+        {
+            await Console.Out.WriteLineAsync($"Blob: {blob.Name}");
         }
     }
     
